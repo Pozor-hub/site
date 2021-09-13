@@ -1,0 +1,54 @@
+body{
+    display: contents;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Name{
+    background-color: aqua;
+}
+
+header > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    width: 500px;
+    margin:auto;
+}
+
+header > nav{
+    padding: 20px,0;
+    background-color: rgb(133, 128, 128);
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(110, 21, 21);
+}
+
+header ul> li{
+    position: relative;
+}
+
+header .submenu{
+    position: absolute;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    top: 100;
+    left:0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 250ms;
+}
+header .submenu a{
+    color:rgb(114, 27, 168);
+}
+header li:hover .submenu{
+    transform: scaleY(1);
+}
+header:hover a{
+    color:rgb(99, 18, 18);
+}
